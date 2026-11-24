@@ -1,0 +1,116 @@
+/* Paleta de cores do Cliente IA - ALTERE AQUI */
+:root {
+    --cor-fundo: #f4f4f9;       /* Cor de fundo solicitada */
+    --cor-texto: #222222;       /* Cor da fonte solicitada */
+    --cor-primaria: #0056b3;    /* Cor de destaque (Navbar/Tabela) */
+    --cor-secundaria: #ffffff;  /* Cor de fundo dos cards/nav */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner centralizado */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 5px;
+}
+
+.requisitos-lista {
+    margin-left: 25px;
+}
+
+
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria-flex img {
+    max-width: 500px; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-secundaria);
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+}
